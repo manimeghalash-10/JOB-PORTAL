@@ -1,0 +1,284 @@
+/* PAGE */
+
+.profile-wrapper {
+  min-height: 100vh;
+  background: #f4f7fb;
+}
+
+.profile-page {
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+/* CARD */
+
+.profile-card {
+  width: 100%;
+  max-width: 520px;
+  background: white;
+  border-radius: 22px;
+  overflow: hidden;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
+}
+
+/* BANNER */
+
+.profile-banner {
+  height: 160px;
+  background: linear-gradient(
+    135deg,
+    #4f46e5,
+    #7c3aed
+  );
+}
+
+/* IMAGE */
+
+.profile-image-container {
+  display: flex;
+  justify-content: center;
+  margin-top: -60px;
+}
+
+.profile-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 5px solid white;
+  object-fit: cover;
+}
+
+/* CONTENT */
+
+.profile-content {
+  padding: 30px;
+  text-align: center;
+}
+
+.profile-content h2 {
+  font-size: 30px;
+  color: #1e293b;
+}
+
+/* INFO */
+
+.job-role,
+.profile-location,
+.profile-email {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  color: #64748b;
+  margin-top: 12px;
+}
+
+/* INPUTS */
+
+.edit-input {
+  width: 100%;
+  max-width: 250px;
+  padding: 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  outline: none;
+}
+
+.edit-textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #d1d5db;
+  margin-top: 10px;
+  resize: none;
+  height: 100px;
+}
+
+/* ABOUT */
+
+.about-section {
+  margin-top: 25px;
+  text-align: left;
+}
+
+.about-section h3 {
+  margin-bottom: 10px;
+}
+
+.about-section p {
+  color: #64748b;
+  line-height: 1.7;
+}
+
+/* SKILLS */
+
+.skills-section {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 25px;
+}
+
+.skills-section span {
+  background: #eef2ff;
+  color: #4338ca;
+  padding: 8px 14px;
+  border-radius: 30px;
+  font-size: 14px;
+}
+
+/* PROGRESS */
+
+.progress-section {
+  margin-top: 30px;
+}
+
+.progress-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+/* RESUME */
+
+.resume-box {
+  margin-top: 30px;
+}
+
+.upload-btn {
+  display: inline-block;
+  padding: 12px 20px;
+  background: #4f46e5;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.uploaded-file {
+  background: #f8fafc;
+  padding: 16px;
+  border-radius: 12px;
+}
+
+.uploaded-file p {
+  color: #16a34a;
+  font-weight: 600;
+}
+
+.resume-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.download-btn,
+.remove-btn {
+  border: none;
+  padding: 10px 16px;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.download-btn {
+  background: #16a34a;
+}
+
+.remove-btn {
+  background: #ef4444;
+}
+
+/* SOCIAL */
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.social-links a {
+  width: 45px;
+  height: 45px;
+  background: #eef2ff;
+  color: #4338ca;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 18px;
+}
+
+/* BUTTONS */
+
+.profile-actions {
+  display: flex;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.edit-btn,
+.save-btn,
+.linkedin-btn {
+  flex: 1;
+  padding: 13px;
+  border: none;
+  border-radius: 12px;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.edit-btn,
+.save-btn {
+  background: #4f46e5;
+}
+
+.linkedin-btn {
+  background: #0a66c2;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 500px) {
+
+  .profile-actions {
+    flex-direction: column;
+  }
+
+  .resume-actions {
+    flex-direction: column;
+  }
+
+}
+.camera-icon {
+  position: absolute;
+  bottom: 0;
+  right: 35%;
+  width: 38px;
+  height: 38px;
+  background: #4f46e5;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: 3px solid white;
+}
+
+.profile-image-container {
+  position: relative;
+}
